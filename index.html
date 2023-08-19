@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Login Clone</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: auto;
+      margin-top: 100px;
+      padding: 20px;
+      background-color: #1c1c1c;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login-form {
+      text-align: center;
+    }
+    .social-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .social-button {
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .spotify-logo {
+      width: 300px;
+      height: 180px;
+      margin: auto;
+      display: block;
+    }
+    .form-input {
+      margin-top: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <img src="https://www.pngmart.com/files/22/Spotify-Logo-PNG-HD-Isolated-200x75.png" alt="Spotify Logo" class="spotify-logo">
+      <h2>Login to Spotify</h2>
+    </div>
+    <div class="login-form">
+      <form>
+        <input type="text" class="form-control form-input" placeholder="Username">
+        <input type="password" class="form-control form-input" placeholder="Password">
+        <div class="social-buttons">
+          <button class="btn btn-primary social-button">Continue with Google</button>
+          <button class="btn btn-secondary social-button">Continue with Apple</button>
+          <button class="btn btn-info social-button">Continue with Facebook</button>
+          <button class="btn btn-light social-button">Continue with Number</button>
+        </div>
+        <button type="submit" class="btn btn-primary form-input">Log In</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
